@@ -2,6 +2,7 @@
 import { Command } from "commander";
 import checkUpdates from "./commands/check-updates";
 import update from "./commands/update";
+import { dev } from "./commands/runner";
 
 const bootstrap = () => {
     const program = new Command();
@@ -13,6 +14,7 @@ const bootstrap = () => {
     // load commands
     checkUpdates(program);
     update(program);
+    dev(program);
 
     program.parse(process.argv);
 
