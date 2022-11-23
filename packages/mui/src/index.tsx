@@ -2,7 +2,9 @@ export * from "@mui/x-data-grid";
 export * from "@mui/system";
 
 import * as colors from "@mui/material/colors";
+import * as locale from "@mui/material/locale";
 
+export { locale };
 export { colors };
 export {
     alpha,
